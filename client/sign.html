@@ -1,0 +1,24 @@
+<html><head>
+  <title>Signage</title>
+<template name="posts">
+  
+  <div class="container">
+  <!-- <div style="margin-top:10px;">
+    <span class="btn btn-warning editable-text-trigger">
+      <i class="fa fa-plus"></i> New URL{{> editableText context=newCommentDoc collection="posts" field="title" autoInsert=true beforeInsert="addTimestampToDoc"}}
+    </span>
+  </div> -->
+  {{#each posts}}
+    <div class="post">
+      <button type="button" class="show btn btn-primary">{{body}} show</button>
+      <h2 class="editable-text-trigger">
+        {{&gt; editableText options=postOptions emptyText="No title"}}
+      </h2>
+    </div>
+  {{/each}}
+   </div>
+
+</template></head>
+
+
+<body></body></html>
